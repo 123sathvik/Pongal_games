@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Calendar, Trophy, Users, Sparkles } from 'lucide-react';
-
+import { Routes, Route, Link } from 'react-router-dom'
 export default function PongalLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -51,6 +51,9 @@ export default function PongalLanding() {
                 <a href="#results" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
                   Results
                 </a>
+                <Link to="/dashboard" className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full font-bold">
+                  Overview
+                </Link>
                 <a href="#schedule" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
                   Admin
                 </a>
@@ -83,9 +86,9 @@ export default function PongalLanding() {
                 <a href="#results" className="block px-4 py-3 text-white/90 hover:bg-white/10 rounded-lg backdrop-blur-md">
                   Results
                 </a>
-                <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full font-bold">
-                  Dashboard
-                </button>
+                <Link to="/dashboard" className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full font-bold">
+                  Overview
+                </Link>
               </div>
             )}
           </div>
