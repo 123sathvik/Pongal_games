@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X, Calendar, Trophy, Users, Sparkles } from 'lucide-react';
 import { Routes, Route, Link } from 'react-router-dom'
 export default function PongalLanding() {
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -20,7 +21,7 @@ export default function PongalLanding() {
         <div className="absolute inset-0 bg-linear-to-br from-indigo-900/95 "></div>
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
-
+    
       {/* Content */}
       <div className="relative z-10">
         {/* Navbar */}

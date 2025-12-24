@@ -230,7 +230,7 @@ export default function PongalGameStatus() {
                 </button>
               ))}
             </div>
-
+        
             {/* Games Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {filteredGames.map(game => (

@@ -10,7 +10,6 @@ function App() {
   <>
   <Routes>
     <Route   path="/" element={<PongalLanding />}></Route>
-
   <Route path="/dashboard" element={<PongalGameStatus />}></Route>
   </Routes>
   </>

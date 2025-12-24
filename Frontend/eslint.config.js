@@ -1,29 +1,30 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
-      parserOptions: {
-        ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
-        sourceType: 'module',
-      },
-    },
-    rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-    },
-  },
-])
+INSERT INTO TextEncoderStream.etm_users (
+    username,
+    display_name,
+    first_name,
+    last_name,
+    primary_email,
+    status,
+    user_type,
+    auth_provider,
+    password_hash,
+    mfa_enabled,
+    two_factor_enabled,
+    email_verified,           
+    email_verified_at,       
+    created_at
+) VALUES (
+    'sristi',                          
+    'Admin User',                      
+    'Admin',                          
+    'User',                            
+    '0srsu7@gmail.com',              
+    'ACTIVE',                          
+    'ADMIN',                           
+    'LOCAL',                          
+   "password123",
+    false,                            
+    false,                                                         
+    NOW()            
+    
+);
