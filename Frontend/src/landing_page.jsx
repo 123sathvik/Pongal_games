@@ -39,25 +39,25 @@ export default function PongalLanding() {
 
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-8">
-                <a href="#home" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
+                <a href="#home" className="text-white/90 text-sm hover:text-yellow-300 transition-colors font-medium text-lg">
                   Home
                 </a>
-                <a href="#games" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
+                <a href="#games" className="text-white/90 text-sm hover:text-yellow-300 transition-colors font-medium text-lg">
                   Games List
                 </a>
-                <a href="#schedule" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
+                <a href="#schedule" className="text-white/90 text-sm hover:text-yellow-300 transition-colors font-medium text-lg">
                   Schedule
                 </a>
-                <a href="#results" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
+                <a href="#results" className="text-white/90 text-sm hover:text-yellow-300 transition-colors font-medium text-lg">
                   Results
                 </a>
-                <Link to="/dashboard" className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-3 rounded-full font-bold">
+                <Link to="/dashboard" className="w-full text-sm bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-3 rounded-full font-bold text-center">
                   Overview
                 </Link>
-                <a href="#schedule" className="text-white/90 hover:text-yellow-300 transition-colors font-medium text-lg">
+                <a href="#schedule" className="text-white/90 text-sm hover:text-yellow-300 transition-colors font-medium text-lg">
                   Admin
                 </a>
-                <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-yellow-500/50 transform hover:scale-105 transition-all">
+                <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm px-6 py-3 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-yellow-500/50 transform hover:scale-105 transition-all">
                   Dashboard
                 </button>
               </div>
